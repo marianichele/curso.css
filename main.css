@@ -33,6 +33,9 @@ body {
 #product-overview h1{
     color: #bcc5c4;
     font-family: 'Anton', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 3%;
 }   
 
 .plan_list {
