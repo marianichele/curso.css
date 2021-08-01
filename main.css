@@ -9,15 +9,15 @@ body {
 
 #product-overview {
     background: linear-gradient(to top, rgba(80, 68, 18, 0) 10%, transparent),
-    url("https://unibasq.org/wp-content/uploads/2020/08/freedom-day-e1572604258870-1140x700.jpg") left 10% bottom 20%/cover no-repeat border-box, #da9ca3;
+    url("https://unibasq.org/wp-content/uploads/2020/08/freedom-day-e1572604258870-1140x700.jpg") left 10% bottom 70%/cover no-repeat border-box, #da9ca3;
     /* background-image: url("https://unibasq.org/wp-content/uploads/2020/08/freedom-day-e1572604258870-1140x700.jpg");
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box; 
     background-image: linear-gradient(180deg, color); 
     background-image: radial-gradient(circle 20px left 50%, red, green); */
-    width: 100%;
-    height: 33rem;
+    width: 100vw;
+    height: 40vh;
     padding: 1rem;
     margin-top: 3rem;
     position: relative;
@@ -139,3 +139,52 @@ body {
 /* h1 {
     font-family: sans-serif;
 } */
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
