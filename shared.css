@@ -37,11 +37,9 @@ main {
     left: 0;
     position: fixed;
     z-index: 1;
-}
-
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .toggle-button {
@@ -70,23 +68,28 @@ main {
     color: #2b2b2b;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
-    height: 2.5rem; 
     /* width: 20px; */
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .main-header_brand img {
-    height: 100%; 
+    height: 2.5rem; 
     /* width: 100%; */
+    vertical-align: middle;
 }
 
 .main-nav {
+    display: none;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.main-nav__item {
     display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    margin: 0 1rem;
 }
 
 .main-nav_item a,
@@ -100,6 +103,7 @@ main {
 .main-nav_item a:hover,
 .main-nav_item a:active {
     color: white;
+    border-bottom: 5px solid white;
 }
 
 .main-nav_item-cta a,
@@ -119,20 +123,27 @@ main {
     border: none;
 }
 
-.main-nav_item {
-    display: none;
-    
-}
-
 @media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        /* display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle; */
+        display: flex;
+    }
+
     .main-nav_items {
         margin: 0;
         padding: 0;
         list-style: none;
+        display: flex;
     }
     
     .main-nav_item    {
-        display: inline-block;
         margin: 0 1rem;
     }
     
@@ -155,18 +166,6 @@ main {
         background: #da9ca3;
         padding: 0.5rem 1rem;
         border-radius: 8px;
-    }
-    
-    .main-nav_item-cta a:hover,
-    .main-nav_item-cta a:active,
-    .mobile-nav__item--cta a:hover,
-    .mobile-nav__item--cta a:active {
-        color: #da9ca3;
-        background: white;
-        border: none;
-    }
-    .toggle-button {
-        display: none;
     }
 }
 
@@ -260,7 +259,7 @@ main {
     background: #ccc;
     color: #a1a1a1;
 }
- m 
+
 .open {
     display: block !important;
 }
