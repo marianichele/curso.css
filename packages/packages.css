@@ -34,6 +34,7 @@
     font-weight: 700; */
     font-size: 1.2rem;
     /* font-style font-variant font-weight font-size font-family/line-height font-family */
+    overflow: hidden;
 }
 
 .main-packages:hover ,
@@ -44,13 +45,17 @@
 
 .main-package_badge {
     position: absolute;
-    top: 0rem;
-    margin: 0.5rem;
+    top: 0;
+    margin: 0;
     right: 0;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: white;
     background-color: #da9ca3;
     padding: 0.5rem;
+    transform: rotate(45deg) translate(3.5rem -1rem); 
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
 }
 
 .main-packages-1 {
