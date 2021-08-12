@@ -6,16 +6,27 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+} 
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    display: grid;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    /* padding-top: 3.5rem; */
+    height: 100%;
 }
 
 main {
-    min-height: calc(100vh - 3.5rem - 7.25rem);
-    margin-top: 3.5rem;
+    /* grid-row: 2 / 3; */
+    grid-area: main;
 }
 
 .backdrop {
@@ -168,6 +179,8 @@ main {
     background-color: black;
     padding: 2rem;
     margin-top: 2rem;
+    /* grid-row: 3 / 4; */
+    grid-area: footer;
 }
 
 .main-footer_links {
